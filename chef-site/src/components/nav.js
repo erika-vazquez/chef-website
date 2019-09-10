@@ -1,49 +1,30 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { Component } from 'react';
+import style from 'bootstrap/dist/css/bootstrap.css';
+import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
 
-<>
-function NavBar(){
 
-return(
-  <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+class NavBar extends Component {
+	render() {
+		return (
+			<>
+      <Navbar bg="dark" variant="dark" expand="lg">
+  <Navbar.Brand href="#home">Chef Tyy</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+      <Nav.Link href="#link">About</Nav.Link>
+      <Nav.Link href="#link">Contact</Nav.Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info">Search</Button>
+      <Button variant="outline-success">Search</Button>
     </Form>
-  </Navbar>
-  <br />
-  <Navbar bg="primary" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-light">Search</Button>
-    </Form>
-  </Navbar>
-
-  <br />
-  <Navbar bg="light" variant="light">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-primary">Search</Button>
-    </Form>
-  </Navbar>
-)
+  </Navbar.Collapse>
+</Navbar>
+        </>
+		)
+	}
 }
-</>
+
+export default NavBar;
