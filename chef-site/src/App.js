@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './components/nav.js'
+import HomeSec from './components/homeSection'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header>
     <NavBar />
       </header>
+      <HomeSec />
     </div>
   );
 }
