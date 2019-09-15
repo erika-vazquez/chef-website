@@ -4,7 +4,9 @@ class HomeSec extends Component {
 	render() {
 		return (
 			<>
-      <h1>HELLO</h1>
+			<img src="/Pictures/mediterranean-cuisine-2378758_1920.jpg" ></img>
+      <h1>iCook4U Restaurant</h1>
+	  <h2>Some slogan here</h2>
         </>
 		)
 	}
