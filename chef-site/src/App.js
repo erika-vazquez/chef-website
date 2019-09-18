@@ -1,6 +1,8 @@
 import React from 'react';
-import NavBar from './components/nav.js'
+import NavBar from './components/nav'
 import HomeSec from './components/homeSection'
+import Footer from './components/footer'
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
     <NavBar />
       </header>
       <HomeSec />
+      <Footer />
     </div>
   );
 }
