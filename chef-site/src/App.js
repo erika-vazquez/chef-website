@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './components/nav'
 import HomeSec from './components/homeSection'
 import Footer from './components/footer'
-
+import './App.scss'
 
 function App() {
   return (
